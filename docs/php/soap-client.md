@@ -135,7 +135,7 @@ try {
 } catch (SoapFault $e) {
     if (ENVIRONMENT === 'DEVELOPMENT') {
         var_dump(
-            $soap_client->__getLastRequestHeaders()
+            $soap_client->__getLastRequestHeaders(),
             $soap_client->__getLastRequest(),
             $soap_client->__getLastResponseHeaders(),
             $soap_client->__getLastResponse()
